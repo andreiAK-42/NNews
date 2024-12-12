@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        android:background="@drawable/ripple_effect2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ripple_effect2">
+
+            <TextView
+                android:id="@+id/newsName"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text="Название новости"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/newsText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="32424234werwerwr"
+                android:textSize="1.6mm"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

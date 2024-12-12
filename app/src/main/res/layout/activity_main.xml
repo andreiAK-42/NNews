@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@android:color/black"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/et_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NNews"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+
+            <View
+                android:layout_height="30dp"
+                android:layout_width="0dip"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/im_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/search"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/ripple_effects"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Breaking News"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <View
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Show more"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="11dp"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rViewMainNews"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rViewCategoryNews"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="11dp" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

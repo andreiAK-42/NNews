@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="135dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        app:cardBackgroundColor="@color/white">
+
+       <TextView
+           android:id="@+id/catregoryNewsText"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="Здоровье"
+           android:textColor="@color/black"
+           android:background="@drawable/ripple_effect2"
+           android:gravity="center"/>
+
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
